@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 1px;
+            box-sizing: border-box;
+            /* border: 1px red solid; */
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        h1, h2, h3 {
+            color: #333;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        .education, .experience {
+            margin-left: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+          display: flex;
+          margin: 5px 0 5px 25px;
+        }
+
+        li img {
+          margin: 0 10px 0 0;
+        }
+
+        .skills {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Diego Aveiro Barreto Santana</h1>
+        <p>Web Developer Junior</p>
+    </header>
+
+    <section>
+        <h2>Contact Information</h2>
+        <ul>
+            <li><img src="data:image/png;base64,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" alt="" width="20px"><a href="mailto:diegoaveirobs@gmail.com">Email: diegoaveirobs@gmail.com</a></li>
+            <li><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyeMrh-DYj4k1RBzbaaYwg-IqzVvGiaDkceFfoIzvGGZaXYMLcJ7x9djyZNWBgYQW0u-c&usqp=CAU" alt="" width="20px"><a href="tel:+351912138595">Phone: (+351)9121-38595</a></li>
+            <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAeFBMVEUAAAD///9MTEz8/PyTk5PNzc339/c4ODjo6OhPT0+MjIzu7u6xsbERERGnp6fy8vIiIiLe3t6fn58+Pj5GRkaBgYF6enpfX1/R0dG6urqPj4/X19eZmZlmZmZZWVlkZGQuLi4xMTEZGRlycnK3t7fExMQnJycdHR0+1Fr0AAAFB0lEQVR4nO2daXeqMBCGQW8RcEG02kXa2lbo//+H17WKLJPKjFnO+3wup/Mck5BkksHzrwhHcTQdezYynkbxKLwW8sp62UB3mJ0ZZGGjYRDrjo6JOKg3nOgOjJFJjWES6Y6KlSi5NkwL3TExU6RlwwfdAQnwcGmY6o5GhPRsmLjWRA8Uya+hW4PMmehk6NJroszkYBjojkOQYG/oykymjnhnGOqOQpRwa5jpDkKUbGto/2qijYHvud1It83UG+kOQZiR5/JIuiP2XJ3PnIi8qe4QhJl6dm46qeO6HwAAACBB722ZbWaLt3fdgcjwcZG6GuZL3eGwsxxeJeb6bu0OPFUyjy6l47bMavycynfkDYK+H651x8ZCXQv9xYWdrOZfcD+q6g6vO0198MSz7gC78kQI+v5Md4gdae2EB+xOPy5pQf9Fd5CduJ7J1PKpO8oOfKgIWt0TR0qGNic/FMaZHXPdcd5MT03QX+gO9GbeFA3tPeyg8q7YkesO9GYyRUN7D1VtnDekZt32Gy4UDe3th+6Ppe+Khq+6A70dpYm371u8Q9y+g3Ei0R1mB9Re+VYfyuk73kjVZjUr3UF2I6ANe7pj7EZMCtr7uj/yQAgOv3RH2Blinf+oO77urFsFv3WHx8GgZWbjhOCW56Y+6EATPVK/UMztH2TOFC8Vv5Xl78EKn7PLQTUZWT1Va2K+mORpmuaTVyf1AAAAAAAAAACA+zL+Wc/n6+JHdxwyPC436anGU/j8Ejt2E3s+q+6vDx8Wwnd5e36/Hf9f/YMB9dz1ZY1lWtE70M+fZA0pGgzJ3GrZcNF6ZCAUvGZ1H8PKraqqo9j5x3sY/lAZvD0roVOsdzCkk7BHZA4myRtW8wWNpBJn5qUN100jaC2BQDZP2PBR4SRECf47j7KGc6XzOiXYO6Oo4effBflPYEka/iTU39TC/CtKGiq9Bmvg7YtyhvnrjYLM5yPkDIe3dMIDAed7Uc6wC5xH58005BxtDDVkvENuqiHfoVZTDX22NbGxhmzXOo01ZPsRzTXk+hHNNfSZduAMNmQ6YH43w2G6SsO/PWSTYf5d7He2p++bPyz6eTYY72DYL1cs+Fa8TsbVTOUNN5UqsZniszw3ysQN65papLj4ZznmKmzYrw/yS62YA8tiX9iwMT+o1Bk35hs2j4aPKs+zLDBEDdtq96jcI2eZuEka9ltT9Qrb/QFHASdJw/bKiyqFVThW+oKGAXHlZkUbcqQUBQ2pKYlCXpHj3pWgIbWELWhDjotJgobkKRK6mRpuSP7vpkuBthjSNSXp/LfZhnRJSboYgNmGdAHbfzCEIQxhCEMYwhCGMIQhDGEIQxjCEIYwhCEMYQhDGMIQhjCEIQxhCEMYwhCGMIQhDGEIQxjCEIYwhCEMYQhDGMIQhjCEoYBhRP6Xhpug5HP0NWX6VhBHqehx1GsnWtc/SDzWi+j7n2vyfwuXiQYAAAAAAPfC9Ynd2KtUEnOMqefYl2oqRB5/IX6ziD3uIvWmMfLYatUaSugxVo02kYHvEfW2bCfbGrrdTMOtocBnTcwh9neGge4wBAn2hkJfUTKBiX8wZNlWNZH9ZvbeMOGor2geRfJryPo9DHM41M48ZhfoJIl9HD/Tc8qfpK411OJU/fQ3Q5S4Ndyci0lf5MBcemlMzlqXWb7AldlNfFm4vpzHDDP7VxqDrFwKvJKpDUdxNLVze2o8jeJRpdL5f2YjU4xtkVEnAAAAAElFTkSuQmCC" alt="" width="20px"><a href="https://www.linkedin.com/in/diegoaveirobs/" target="_blank">https://www.linkedin.com/in/diegoaveirobs/</a></li>
+            <li><img src="data:image/png;base64,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" alt="" width="20px"><a href="https://diegoaveiro.github.io/portifolio/" target="_blank">GitHub: https://diegoaveiro.github.io/portifolio/</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="education">
+            <a href="https://www.uel.br/portal/english/" target="_blank"><h3>State University of Londrina</h3></a>
+            <p>Bachelor of Social Sciences Incomplete</p>
+            <p>Graduation Year: 2017</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Work Experience</h2>
+        <div class="experience">
+            <a href="https://www.psmcompany.com.br/" targer="_blank"><h3>PSM COMPANY PROFESSIONAL SERVICES</h3></a>
+            <p>Customer Support</p>
+            <p>Jan 2021 - May 2021</p>
+            <ul>
+                <li>Customer support and assistance through remote assistance.</li>
+                <li>Analysis and correction of systemic errors.</li>
+                <li>Creation of reports.</li>
+                <li>Presentation of proposals for process improvements.</li>
+                <li>Participation in training sessions.</li>
+            </ul>
+        </div>
+        <div class="experience">
+            <a href="https://www.irismed.com.br/" targer="_blank"><h3>SPI INFORMÁTICA</h3></a>
+            <p>Customer Support</p>
+            <p>Jul 2019 - Sep 2019</p>
+            <ul>
+                <li>Customer support and assistance through remote assistance.</li>
+                <li>Analysis and problem-solving.</li>
+            </ul>
+        </div>
+        <div class="experience">
+            <a href="https://contax.com.br/" targer="_blank"><h3>CONTAX MOBITEL</h3></a>
+            <p>Customer Support</p>
+            <p>Jan 2014 - Jan 2015</p>
+            <ul>
+              <li>Customer support and assistance through remote assistance.</li>
+              <li>Analysis and problem-solving.</li>
+              <li>Creation of reports.</li>
+              <li>Presentation of proposals for improvements.</li>
+              <li>Participation in training sessions.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <p class="skills">HTML, CSS, JavaScript, React, Node.js, Git, SQL, Responsive Design</p>
+    </section>
+
+    <script>
+        // You can add JavaScript functionality here if needed
+    </script>
+
+</body>
+</html>
